@@ -10,14 +10,14 @@ int main(){
         num = (num + (int(s[i]-0)-55))*n;
       }
       else
-        num = (num+int(s[i]))*n;
+        num = (num+int(s[i]-'0'))*n;
     }
     else{
       if(s[i]>='A'){
         num = num + (int(s[i]-0)-55);
       }
       else
-        num = num+int(s[i]);
+        num = num+int(s[i]-'0');
     }
     }
   std::cout << num<<"\n";
